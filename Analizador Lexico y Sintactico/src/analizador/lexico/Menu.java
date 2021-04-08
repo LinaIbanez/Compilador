@@ -89,7 +89,8 @@ int vawhile=0,vafor=0,vai=0,vasu=0;
         jScrollPane4.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Analizador Lexicografico");
+        setTitle("Compilador hecho con lágrimas");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         areasintactico.setEditable(false);
@@ -134,7 +135,7 @@ int vawhile=0,vafor=0,vai=0,vasu=0;
         });
         jScrollPane5.setViewportView(tabla);
 
-        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, 380, 300));
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 140, 450, 300));
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -146,33 +147,33 @@ int vawhile=0,vafor=0,vai=0,vasu=0;
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 130, 30));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 120, 30));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         btnlexico.setBackground(new java.awt.Color(0, 0, 0));
         btnlexico.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnlexico.setForeground(new java.awt.Color(255, 255, 255));
         btnlexico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/analizador/lexico/analyze.png"))); // NOI18N
-        btnlexico.setText("Analizador Lexico");
+        btnlexico.setText("Analizador Léxico");
         btnlexico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnlexicoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnlexico, new org.netbeans.lib.awtextra.AbsoluteConstraints(885, 0, 170, 30));
+        getContentPane().add(btnlexico, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 170, 30));
 
         btnsintactico.setBackground(new java.awt.Color(0, 0, 0));
         btnsintactico.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnsintactico.setForeground(new java.awt.Color(255, 255, 255));
         btnsintactico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/analizador/lexico/analyze.png"))); // NOI18N
-        btnsintactico.setText("Analizador Sintactico");
+        btnsintactico.setText("Analizador Sintáctico & Semántico");
         btnsintactico.setEnabled(false);
         btnsintactico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsintacticoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsintactico, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 0, 180, 30));
+        getContentPane().add(btnsintactico, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, 280, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/analizador/lexico/3.png"))); // NOI18N
@@ -210,6 +211,8 @@ int vawhile=0,vafor=0,vai=0,vasu=0;
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/analizador/lexico/Imagen4.png"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, 240, -1));
+
+        getAccessibleContext().setAccessibleName("Compilador hecho con lágrimas");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
